@@ -34,14 +34,14 @@ class Main extends Component {
   return (
       
    // this.state.results.length > 0 ?
-      <main>
+    <> 
         <button type="button">Cargar más tarjetas</button>
             <section className="card-container">
                 { 
                 this.state.datos.map((element, index)=><Cards key={element.id+index} info={element} removerCarta={(cartaId)=> this.removerCarta(cartaId)}/>)
                 }
             </section>
-        </main>
+        </>
      //   :
        // <p>Cargando...</p>
   )
