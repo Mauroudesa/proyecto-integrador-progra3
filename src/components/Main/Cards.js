@@ -19,13 +19,16 @@ class Cards extends Component {
     let fotosCompletas = u+i
   return (
     <article>
+        <button onClick={() => this.props.removerCarta(this.props.info.id)}className="boton"></button>
     <main>
         <img src={`${fotosCompletas}`} alt=""/>
         <h3>{this.props.info.title}</h3>
         <p className="description">{this.props.info.release_date}</p>
         <section className="aditional-info">
-            <p>{this.props.info.overview}</p>
-            
+        <p>{this.props.info.overview}</p>
+        <p> Lenguaje: {this.props.info.original_language}</p>
+        <p> Puntaje: {this.props.info.vote_average}</p>
+        <p>Popularidad: {this.props.info.popularity}</p>
         </section>
         <a href="">Ver más</a>
     </main>
