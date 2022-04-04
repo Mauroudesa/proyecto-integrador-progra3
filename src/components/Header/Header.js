@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Form from './Form'
 
 function Header() {
   return (
@@ -9,11 +9,7 @@ function Header() {
             <section className='navegacion'>
                 <i className="fas fa-th"></i>
                 <i className="fas fa-align-justify"></i>
-                <form className='search' action="">
-                    <input className='buscador' type="text" name="search" id="" placeholder="Search"/>
-                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    
-                </form>
+                <Form/>
             </section>
         
         </header>

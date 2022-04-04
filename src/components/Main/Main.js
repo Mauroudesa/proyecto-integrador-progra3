@@ -33,7 +33,7 @@ class Main extends Component {
         console.log(this.state.datos);
   return (
       
-   // this.state.results.length > 0 ?
+    //this.state.results.length > 0 ?
     <> 
         <button type="button">Cargar más tarjetas</button>
             <section className="card-container">
@@ -42,8 +42,8 @@ class Main extends Component {
                 }
             </section>
         </>
-     //   :
-       // <p>Cargando...</p>
+      //:
+        //<p>Cargando...</p>
   )
 }
 }
