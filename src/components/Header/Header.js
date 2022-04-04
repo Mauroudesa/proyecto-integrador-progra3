@@ -1,7 +1,7 @@
 import React from 'react'
 import Form from './Form'
 
-function Header() {
+function Header(props) {
   return (
     <header className='header'>
        
@@ -9,7 +9,7 @@ function Header() {
             <section className='navegacion'>
                 <i className="fas fa-th"></i>
                 <i className="fas fa-align-justify"></i>
-                <Form/>
+                <Form filtrar={props.filtrar}/>
             </section>
         
         </header>

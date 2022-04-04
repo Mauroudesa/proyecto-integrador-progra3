@@ -1,5 +1,6 @@
 import { Component } from "react"
 import React from 'react'
+import App from "../../App"
 //! https://image.tmdb.org/t/p/w500 +{this.props.info.backdrop_path}
 
 
@@ -20,7 +21,7 @@ class Cards extends Component {
     let fotosCompletas = tmdb + apiTmdb
   return (
     <article className="hola">
-        <button onClick={() => this.props.removerCarta(this.props.info.id)}className="boton"></button>
+        <button onClick={() => this.props.remover(this.props.info.id)}className="boton"></button>
     <main>
         
         <img src={`${fotosCompletas}`} alt=""/>

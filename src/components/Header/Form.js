@@ -12,7 +12,7 @@ import React, { Component } from 'react'
         event.preventDefault();
     }
     controlarCambios(event){
-        this.setState({valor:event.target.value});
+        this.setState({valor:event.target.value}, this.props.filtrar(this.state.valor));
     }
   render() {
     return (
