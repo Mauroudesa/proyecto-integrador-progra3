@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Cards from './Cards'
-import App from '../../App'
+
 
 class Main extends Component {
     constructor(props) {
@@ -20,7 +20,7 @@ class Main extends Component {
       
     //this.state.results.length > 0 ?
     <> 
-        <button type="button">Cargar más tarjetas</button>
+        <button type="button" onClick={()=>this.props.agregarMas()}>Cargar más tarjetas</button>
             <section className="card-container">
                 { 
                 this.props.datos.map((element, index)=><Cards key={element.id+index} info={element} remover={(pepe)=> this.props.removerCarta(pepe)}/>)
