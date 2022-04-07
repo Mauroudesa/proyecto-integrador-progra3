@@ -5,7 +5,7 @@ import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 import React, { Component } from 'react'
 
-
+// Hola 
 class App extends Component {
   constructor(props) {
       super(props)
