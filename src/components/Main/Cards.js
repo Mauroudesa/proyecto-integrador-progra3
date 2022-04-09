@@ -9,11 +9,25 @@ class Cards extends Component {
         super(props)
         this.state = {
             datos: [],
-            error: ""
+            error: "",
+            showMore: false,
+            btnMessage: 'Ver más'
         }
     }
 
-
+    showMore() {
+      if(this.state.showMore) {
+          this.setState({
+              showMore: false,
+              btnMessage: 'Ver más'
+          })
+      } else {
+          this.setState({
+              showMore: true,
+              btnMessage: 'Ver menos'
+          })
+      }
+  }
   render(){ 
       //! En este paso declaro 3 variable tmdb que contiene la url donde se almacenan las imagenes de tmdb otra donde llamo a las imagenes de la api que antes solicite y por ultimo una que las concatena asi el resultado es la imagen de la api
     let tmdb = "https://image.tmdb.org/t/p/w500"
@@ -28,12 +42,19 @@ class Cards extends Component {
         <h3>{this.props.info.title}</h3>
         <p className="fecha">{this.props.info.release_date}</p>
         <section className="aditional-info">
-        <p className="descripcion">{this.props.info.overview}</p>
+        {
+                    this.state.showMore ? 
+                    <p className="descripcion">{this.props.info.overview}</p>
+                    :
+                        ''
+                }
         <p> Lenguaje: {this.props.info.original_language}</p>
         <p> Puntaje: {this.props.info.vote_average}</p>
         <p>Popularidad: {this.props.info.popularity}</p>
         </section>
-        <a href="">Ver más</a>
+        
+        <p className='more' onClick={() => this.showMore()}>{this.state.btnMessage}</p>
+            
         
     </main>
 </article>
