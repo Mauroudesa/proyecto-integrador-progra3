@@ -6,12 +6,12 @@
     width: 60%;
     
     
-    /* width: 300px; */
-/* margin: 1rem;
+     width: 300px; 
+ margin: 1rem;
 border-radius: 3px;
 box-shadow: 0.2px 4px 5px black;
 position: relative;
-overflow: hidden; */
+overflow: hidden; 
   }
   
   .card-container.flex-column{
@@ -20,10 +20,10 @@ overflow: hidden; */
    flex-wrap: wrap;
     justify-content: center;
    
-    /* width: 300px; */
-  /* margin: 1rem;
+     width: 300px; 
+   margin: 1rem;
   border-radius: 3px;
   box-shadow: 0.2px 4px 5px black;
   position: relative;
-  overflow: hidden; */
+  overflow: hidden; 
   }

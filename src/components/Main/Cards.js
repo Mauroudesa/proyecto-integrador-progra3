@@ -1,12 +1,9 @@
 import { Component } from "react"
 import React from 'react'
-<<<<<<< HEAD
 import App from "../../App"
 import "./Cards.css"
-=======
 
->>>>>>> 7d5b586ba210d7ceb82d36cf6448de6ab2e9cb23
-//! https://image.tmdb.org/t/p/w500 +{this.props.info.backdrop_path}
+ //https://image.tmdb.org/t/p/w500 +{this.props.info.backdrop_path}
 
 
 class Cards extends Component {
@@ -21,20 +18,18 @@ class Cards extends Component {
         }
     }
 
-<<<<<<< HEAD
-// cambiarEsquema(){
-//   if (this.state.orientacion === "row") {
-//     this.setState({ 
-//       orientacion:"column"
-//     }) 
-//   }
-//   else{
-//     this.setState({
-//       orientacin: "row"
-//     })
-//   }
-// }
-=======
+ cambiarEsquema(){
+     if (this.state.orientacion === "row") {
+     this.setState({ 
+       orientacion:"column"
+     }) 
+   }
+  else{
+    this.setState({
+       orientacion: "row"
+     })
+   }
+ }
     showMore() {
       if(this.state.showMore) {
           this.setState({
@@ -48,7 +43,6 @@ class Cards extends Component {
           })
       }
   }
->>>>>>> 7d5b586ba210d7ceb82d36cf6448de6ab2e9cb23
   render(){ 
       //! En este paso declaro 3 variable tmdb que contiene la url donde se almacenan las imagenes de tmdb otra donde llamo a las imagenes de la api que antes solicite y por ultimo una que las concatena asi el resultado es la imagen de la api
     let tmdb = "https://image.tmdb.org/t/p/w500"
