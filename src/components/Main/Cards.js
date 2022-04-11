@@ -12,7 +12,10 @@ class Cards extends Component {
         this.state = {
           orientacion: "row",
             datos: [],
+            showMore: false,
+            btnMessage: 'Ver más',
             error: ""
+            
         }
     }
 
@@ -61,12 +64,18 @@ class Cards extends Component {
         <h3>{this.props.info.title}</h3>
         <p className="fecha">{this.props.info.release_date}</p>
         <section className="aditional-info">
-        <p className="descripcion">{this.props.info.overview}</p>
+        {
+                    this.state.showMore ? 
+                    <p className="descripcion">{this.props.info.overview}</p>
+                    :
+                        ''
+                }
         <p> Lenguaje: {this.props.info.original_language}</p>
         <p> Puntaje: {this.props.info.vote_average}</p>
         <p>Popularidad: {this.props.info.popularity}</p>
         </section>
-        <a href="">Ver más</a>
+        <button className='more' onClick={() => this.showMore()}>{this.state.btnMessage} </button>
+        
         
     </main>
 </article> 

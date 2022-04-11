@@ -9,7 +9,6 @@
      width: 300px; 
  margin: 1rem;
 border-radius: 3px;
-box-shadow: 0.2px 4px 5px black;
 position: relative;
 overflow: hidden; 
   }
@@ -23,7 +22,6 @@ overflow: hidden;
      width: 300px; 
    margin: 1rem;
   border-radius: 3px;
-  box-shadow: 0.2px 4px 5px black;
   position: relative;
   overflow: hidden; 
   }
