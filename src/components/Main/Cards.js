@@ -1,6 +1,6 @@
 import { Component } from "react"
 import React from 'react'
-import App from "../../App"
+
 //! https://image.tmdb.org/t/p/w500 +{this.props.info.backdrop_path}
 
 
@@ -53,7 +53,7 @@ class Cards extends Component {
         <p>Popularidad: {this.props.info.popularity}</p>
         </section>
         
-        <p className='more' onClick={() => this.showMore()}>{this.state.btnMessage}</p>
+        <button className='more' onClick={() => this.showMore()}>{this.state.btnMessage}</button>
             
         
     </main>
