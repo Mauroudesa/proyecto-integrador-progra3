@@ -91,4 +91,14 @@ img{
 .footer ul{
   color: rgb(134, 63, 63);
 }
+<<<<<<< HEAD
 
+=======
+.gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  padding: 3rem
+}
+>>>>>>> 7d5b586ba210d7ceb82d36cf6448de6ab2e9cb23
