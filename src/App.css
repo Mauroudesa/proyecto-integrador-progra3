@@ -91,3 +91,10 @@ img{
 .footer ul{
   color: rgb(134, 63, 63);
 }
+.gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  padding: 3rem
+}

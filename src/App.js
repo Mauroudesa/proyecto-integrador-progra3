@@ -5,6 +5,7 @@ import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 import React, { Component } from 'react'
 
+
 // Hola 
 class App extends Component {
   constructor(props) {
@@ -13,14 +14,17 @@ class App extends Component {
           datos: [],
           datosInicial:[],
           pagina: undefined,
+          isLoaded: false,
           error: ''
+          
       }
   }
 
   componentDidMount() {
       fetch("https://api.themoviedb.org/3/movie/popular?api_key=65a3967c53df3743ec649c48f67fa287&language=en-US&page=1")
           .then((response) => response.json())
-          .then((data) => this.setState({ datos: data.results , pagina: 1}))
+          .then((data) => this.setState({ datos: data.results , datosInicial: data.results, pagina: 1, isLoaded: true}))
+          
           //! then((data) => this.setState({ datos: data.results })) esto lo hacemos para volver a 0 los datos del buscador
           .catch((error) => this.setState({ error: 'Ups, ocurrió un error inesperado' }))
              
@@ -33,7 +37,7 @@ class App extends Component {
       })
   }
 filterPeliculas(peliculaName){
-    let peliculasFiltradas = this.state.datos.filter((dato) => dato.title.toLowerCase().includes(peliculaName))
+    let peliculasFiltradas = this.state.datosInicial.filter((dato) => dato.title.toLowerCase().includes(peliculaName.toLowerCase()))
     this.setState({
     datos: peliculasFiltradas
 })
@@ -57,8 +61,15 @@ agregarMas(){
     return (
     <>
     <body>
+        
         <Header filtrar={(peliculaName)=>{this.filterPeliculas(peliculaName)}}/>
-        <Main datos={this.state.datos} removerCarta={(cartaId)=> this.removerCarta(cartaId)} agregarMas={()=> this.agregarMas()} />
+        {
+             
+                this.state.isLoaded === false ?
+                <img src="/loading-gif.gif" className='gif'></img>:
+                <Main datos={this.state.datos} removerCarta={(cartaId)=> this.removerCarta(cartaId)} agregarMas={()=> this.agregarMas()} />
+        }
+        
         <Footer/>
     </body>
     </>
