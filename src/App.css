@@ -7,10 +7,12 @@ body{
 }
 .header{
  background-color: rgb(73, 73, 73);
- padding: 0.1rem 0;
+ padding: 0.3rem 0;
  display: flex;
- justify-content: center;
- align-items: center;
+ display: flex;
+flex-wrap: wrap;
+ position: relative;
+ justify-content: space-between;
  
 }
 
@@ -32,6 +34,9 @@ body{
   border-radius: 0.3rem;
   color: rgb(121, 121, 121);
   font-family: inherit;
+  justify-content: flex-end;
+  align-items: flex-end;
+ 
  
 }
 .buscador:focus{
@@ -46,15 +51,15 @@ body{
 .navegacion{
   position: relative;
   margin: 0;
-  justify-content: flex-end;
-  width: 10px;
+
+  
   height: 80px;
 }
 header button{
 background-color: transparent;
 height: 2.1rem;
 color: #fff;
-border-radius: 0.3rem;
+border-radius: 0.3rem ;
 border-color: rgb(121, 121, 121);
 }
 

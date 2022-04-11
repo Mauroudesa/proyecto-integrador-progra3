@@ -6,10 +6,9 @@ function Header(props) {
     <header className='header'>
        
             <h1 className="logo">App</h1>
-            <section className='navegacion'>
-                <i className="fas fa-th"></i>
-                <i className="fas fa-align-justify"></i>
-                <Form filtrar={props.filtrar}/>
+            <section >
+                
+                <Form classname = "buscador" filtrar={props.filtrar}/>
             </section>
         
         </header>
