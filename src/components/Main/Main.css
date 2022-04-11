@@ -1,0 +1,29 @@
+.card-container.flex-row{
+    align-items: flex-start;
+   display:block;
+   flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    
+    
+    /* width: 300px; */
+/* margin: 1rem;
+border-radius: 3px;
+box-shadow: 0.2px 4px 5px black;
+position: relative;
+overflow: hidden; */
+  }
+  
+  .card-container.flex-column{
+    align-items: flex-start;
+   display:flex;
+   flex-wrap: wrap;
+    justify-content: center;
+   
+    /* width: 300px; */
+  /* margin: 1rem;
+  border-radius: 3px;
+  box-shadow: 0.2px 4px 5px black;
+  position: relative;
+  overflow: hidden; */
+  }

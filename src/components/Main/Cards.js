@@ -1,6 +1,7 @@
 import { Component } from "react"
 import React from 'react'
 import App from "../../App"
+import "./Cards.css"
 //! https://image.tmdb.org/t/p/w500 +{this.props.info.backdrop_path}
 
 
@@ -8,22 +9,40 @@ class Cards extends Component {
     constructor(props) {
         super(props)
         this.state = {
+          orientacion: "row",
             datos: [],
             error: ""
         }
     }
 
-
+// cambiarEsquema(){
+//   if (this.state.orientacion === "row") {
+//     this.setState({ 
+//       orientacion:"column"
+//     }) 
+//   }
+//   else{
+//     this.setState({
+//       orientacin: "row"
+//     })
+//   }
+// }
   render(){ 
       //! En este paso declaro 3 variable tmdb que contiene la url donde se almacenan las imagenes de tmdb otra donde llamo a las imagenes de la api que antes solicite y por ultimo una que las concatena asi el resultado es la imagen de la api
     let tmdb = "https://image.tmdb.org/t/p/w500"
     let apiTmdb = `${this.props.info.poster_path}`;
     let fotosCompletas = tmdb + apiTmdb
   return (
-    <article className="hola">
+     <article  className= 'card'>
+
+     
+
+
         <button onClick={() => this.props.remover(this.props.info.id)}className="boton"></button>
-    <main>
-        
+
+    <main  >
+    
+
         <img src={`${fotosCompletas}`} alt=""/>
         <h3>{this.props.info.title}</h3>
         <p className="fecha">{this.props.info.release_date}</p>
@@ -36,7 +55,7 @@ class Cards extends Component {
         <a href="">Ver más</a>
         
     </main>
-</article>
+</article> 
   )
 }
 }
