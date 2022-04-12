@@ -1,0 +1,29 @@
+.tmdb{
+    width: 10%;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team {
+    font-size: x-large;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    padding: auto;
+  
+}
+img{
+    
+    margin-left: auto;
+}
+.footer{
+  
+        background-color: rgb(7, 73, 131);
+        
+     
+}
+.footer ul {
+    color: rgb(236 236 236);
+}
