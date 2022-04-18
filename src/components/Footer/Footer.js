@@ -6,11 +6,11 @@ import "./Footer.css";
   return (
     <footer className='footer'>
             <ul className="team">
-                <li>Mauro Proto Cassina</li>
+                <ul>Mauro Proto Cassina</ul>
                 <br></br>
-                <li>Juan Ignacio Bedoian </li>
+                <ul>Juan Ignacio Bedoian </ul>
                 <br></br>
-                <li>Alan Geier</li>
+                <ul>Alan Geier</ul>
             </ul>
             <img className="tmdb" src={logo} alt='The Movie Data Base'/>
         </footer>

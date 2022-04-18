@@ -1,11 +1,13 @@
 import React from 'react'
 import Form from './Form'
+import logo from '../img/TMDB.png';
 
 function Header(props) {
   return (
     <header className='header'>
-       
-            <h1 className="logo">App</h1>
+       <section >
+            <img className="logo" src={logo} alt='The Movie Data Base'/>
+            </section>
             <section >
                 
                 <Form classname = "buscador" filtrar={props.filtrar}/>

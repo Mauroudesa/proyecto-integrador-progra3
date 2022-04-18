@@ -2,6 +2,7 @@ import { Component } from "react"
 import React from 'react'
 import App from "../../App"
 import "./Cards.css"
+import eliminate from '../img/Eliminar.jpg';
 
  //https://image.tmdb.org/t/p/w500 +{this.props.info.backdrop_path}
 
@@ -55,7 +56,7 @@ class Cards extends Component {
      
 
 
-        <button onClick={() => this.props.remover(this.props.info.id)}className="boton"></button>
+        <button onClick={() => this.props.remover(this.props.info.id)}className="boton"> <img className="eliminate" src={eliminate} alt='The Movie Data Base'/></button>
 
     <main  >
     

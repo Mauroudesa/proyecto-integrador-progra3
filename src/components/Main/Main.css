@@ -1,6 +1,6 @@
 .card-container.flex-row{
   
-    align-items: flex-start;
+    align-items: flex-end;
    display:block;
    flex-wrap: wrap;
     justify-content: center;
@@ -45,19 +45,50 @@ display: block;
  background-color: white; 
 color: black; 
 border: 2px solid #f44336
+
   }
   .botonsito:hover{
     background-color: #f44336;
     color: white;
   }
 
+  main .more {
+
+    
+    /* CSS */
   
+      align-items: center;
+      background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+      border: 0;
+      border-radius: 10px;
+      box-shadow: rgba(151, 65, 252, 0.2);
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: flex;
+      
+      font-size: 15px;
+      justify-content: center;
+      line-height: 1em;
+    height: 1rem;
+    padding: 0.7rem 0.7rem;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer;
+
+  }
  
-  
+  main .more:hover{
+    font-weight: bold;
+    background-color: rgba(240,248,255, 0.2);
+  }
   body {
     background-image: url("../Fondo/elfondo.png");
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #333;
+    color: rgb(0, 0, 0);
     line-height: 1em;
     margin: 0;
 }
+

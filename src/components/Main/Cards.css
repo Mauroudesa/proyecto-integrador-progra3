@@ -15,7 +15,9 @@
   position: relative;
   overflow: hidden;
   width: 30%;
-  
+  background-color: black;
+ 
+
 
   
   }
@@ -33,12 +35,37 @@
   position: relative;
   overflow: hidden;
   width: 300px;
+  background-color: black;
+  align-items: center;
+  
+  
+
 
   }
 
   .card-container {
     color: white;
-
-    width: 100% !important
+    width: 100% !important;
+   
   }
 
+  .card-container.flex-column h3{
+  text-align: center;
+  }
+
+  .card-container.flex-row h3{
+    text-align: center;
+    }
+
+ .boton {
+width: 10%;
+height: 1rem;
+margin-top: 0.1rem;
+}
+
+.eliminate {
+
+height: 0.5rem;
+align-items: center;
+padding-bottom: 1rem;
+}
