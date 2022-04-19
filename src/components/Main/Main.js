@@ -36,7 +36,7 @@ class Main extends Component {
       <div className> 
          <div> <button className='botonsito' onClick={() => this.cambiarEsquema()}> Cambiar Esquema </button> </div> 
 
-        <button type="button" onClick={()=>this.props.agregarMas()}>Cargar más tarjetas</button>
+        <button className="botonsito2" onClick={()=>this.props.agregarMas()}>Cargar más tarjetas</button>
 
         
 

@@ -11,7 +11,7 @@ class Cards extends Component {
     constructor(props) {
         super(props)
         this.state = {
-          orientacion: "row",
+          
             datos: [],
             showMore: false,
             btnMessage: 'Ver más',
@@ -20,18 +20,7 @@ class Cards extends Component {
         }
     }
 
- cambiarEsquema(){
-     if (this.state.orientacion === "row") {
-     this.setState({ 
-       orientacion:"column"
-     }) 
-   }
-  else{
-    this.setState({
-       orientacion: "row"
-     })
-   }
- }
+
     showMore() {
       if(this.state.showMore) {
           this.setState({
