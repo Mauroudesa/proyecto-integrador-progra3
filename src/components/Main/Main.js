@@ -12,14 +12,14 @@ class Main extends Component {
     }
 
     cambiarEsquema(){
-        if (this.state.orientacion === "row") {
+        if (this.state.orientacion === "column") {
           this.setState({ 
-            orientacion:"column"
+            orientacion:"row"
           }) 
         }
         else{
           this.setState({
-            orientacion: "row"
+            orientacion: "column"
           })
         }
       }
