@@ -66,7 +66,7 @@ agregarMas(){
         <Header filtrar={(peliculaName)=>{this.filterPeliculas(peliculaName)}}/>
         {
              
-                this.state.isLoaded === false ?
+                this.state.isLoaded === '' ?
                 <img src="/loading-gif.gif" className='gif'></img>:
                 <Main datos={this.state.datos} removerCarta={(cartaId)=> this.removerCarta(cartaId)} agregarMas={()=> this.agregarMas()} />
         }

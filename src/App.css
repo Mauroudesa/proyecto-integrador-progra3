@@ -3,26 +3,17 @@ body{
   color: #333;
   line-height: 1em;
   margin: 0;
+  padding: 0px;
 
  
 
 }
-.header{
- background-color:rgb(0, 52, 76);
- padding: 0.3rem 0;
- display: flex;
- display: flex;
-flex-wrap: wrap;
- position: relative;
- justify-content: space-between;
- height: 3rem;
- 
-}
+
 
 
 .logo {
   position: relative;
-  font-size: 1.5em;
+  font-size: 1rem;
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: 100;
@@ -36,40 +27,9 @@ flex-wrap: wrap;
 
 
 
-.buscador{
-  background-color: transparent;
-  border: 2px solid ;
-  padding: 0.5rem 0.5rem;
-  border-radius: 0.3rem;
-  color: rgb(121, 121, 121);
-  font-family: inherit;
-  justify-content: flex-end;
-  align-items:flex-end;
-  margin: 0;
 
- 
-}
-.buscador:focus{
-  outline: 0;
-  
-  
-}
-.buscador input::placeholder{
-  color:rgb(0, 0, 0);
 
-}
-.navegacion{
-  position: relative;
-  margin: 0;
-  height: 80px;
-}
-header button{
-background-color: transparent;
-height: 2.1rem;
-color: #fff;
-border-radius: 0.3rem ;
-border-color: rgb(121, 121, 121);
-}
+
 
 .card-container{
 display: flex;
@@ -95,15 +55,7 @@ img{
   
 }
 
-.footer{
-  background-color: #333;
-  padding: 1rem 0;
-  display: flex;
 
-}
-.footer ul{
-  color: rgb(134, 63, 63);
-}
 .gif {
   display: block;
   margin-left: auto;
@@ -112,12 +64,3 @@ img{
   padding: 3rem
 }
 
-/*@media (max-width:790px) {
-
-  .search{
-   
-  
-   
-  }
-
-}*/
